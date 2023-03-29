@@ -11,6 +11,12 @@ public class Library
 		patrons=new LinkedList();
 	}
 	
+	public Library(Library library)
+	{
+		this.bookList=library.bookList;
+		this.patrons=library.patrons;
+	}
+	
 	public void newBook(Book book)
 	{
 		bookList.addNode(book);
