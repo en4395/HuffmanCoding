@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author ellanoyes
- *
- */
-module privateLibrary {
-}
