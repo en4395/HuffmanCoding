@@ -1,6 +1,6 @@
 package coen352.assignment2;
 
-public class HuffmanTree implements Comparable<HuffmanTree> {
+public class HuffmanTree{
 	private HuffmanNode root;
 	
 	public HuffmanTree(char value, int weight) {
@@ -9,7 +9,7 @@ public class HuffmanTree implements Comparable<HuffmanTree> {
 	
 	public HuffmanTree(HuffmanNode rightTree, HuffmanNode leftTree)
 	{
-		root=new HuffmanInternalNode(leftTree, rightTree);
+		root=new HuffmanInternalNode(rightTree, leftTree);
 	}
 	
 	public int rootWeight(){
