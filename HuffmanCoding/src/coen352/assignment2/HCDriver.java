@@ -46,7 +46,7 @@ public class HCDriver {
 						myMap.put(current, 1);
 						
 						
-						 // if(ascii==10) myMap.put((char)13, 1);
+						 //if(ascii==10) myMap.put((char)13, 1);
 						 // When running the program on Mac, the NL and CR characters
 						 // are interpreted as a single character. So this statement should
 						 // also be executed
@@ -111,9 +111,17 @@ public class HCDriver {
 	
 	public static String encode(String str, Map<Character, String> huffmanCode) {
 		String encoded="";
+		char ch;
+		
 		for(int i=0; i<str.length(); i++) {
-			encoded+=huffmanCode.get(str.charAt(i));
+			ch=str.charAt(i);
+			if(ch<91&&ch>64) //Convert uppercase to lowercase
+			{
+				ch=(char)(ch+32);
+			}
+			encoded+=huffmanCode.get(ch);
 		}
 		return encoded;
 	}
 }
+
