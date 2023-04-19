@@ -9,7 +9,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class HCDriver {
-	static int howMany=0;
 	public static void main(String[] args) throws IOException {		
 		if(args.length>0)
 		{
@@ -86,7 +85,6 @@ public class HCDriver {
 				  }
 				 scin.close();
 				 
-				// System.out.print(howMany);
 				fin.close();
 				}
 				catch (FileNotFoundException e) {
