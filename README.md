@@ -5,8 +5,7 @@ OVERVIEW:
 This huffman coding tree was programmed to match the structure provided in the assignment.
 
 NOTES ON STRUCTURE AND PRIORITY:
-Normally, I would have used a Min Heap to build the tree, because there would not be a hierarchy among nodes of the same frequency/weight, so the 
-priority queue would not need to be stable. 
+When there is no hierarchy among nodes of the same frequency/weight, a min heap may be used to build the tree, as there is no need for a stable structure. 
 However the goal of the assignment was to work out the how priority among nodes of the same frequency was established, then program an 
 appropriate data structure which observed this priority. 
 
