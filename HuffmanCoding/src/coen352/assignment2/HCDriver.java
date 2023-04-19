@@ -94,7 +94,6 @@ public class HCDriver {
 	}
 	//I derived the logic for this method from Ismael's Huffman Coding Tree example
 	public static void encodingMap(HuffmanNode node, Map<Character, String> huffmanCode, String str) {
-		howMany++;
 		if(node==null) 
 			return;
 		
