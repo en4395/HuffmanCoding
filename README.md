@@ -1,5 +1,5 @@
 # Huffman Coding tree
-A tree that matches the structure given in COEN352 Assignment 2
+A tree that matches the structure given in "Data Structures and Algorithms" Assignment 2
 
 OVERVIEW:
 This huffman coding tree was programmed to match the structure provided in the assignment.
